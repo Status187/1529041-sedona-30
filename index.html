@@ -11,13 +11,14 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<!--можно так разьединять блоки и секции пробелами для удобства чтения или нет???-->
+<!--можно так разьединять блоки и секции пробелами для удобства чтения или даже нужно???-->
 <body class="page-body">
+
   <header class="main-header">
     <nav class="main-navigation">
-      <div class="header-logo">
+      <a class="main-header-logo">
         <img src="img/index-img/logo.png" width="138" height="70" alt="Логотип «SEDONA»">
-      </div>
+      </a>
       <ul class="site-navigation">
         <li><a href="blank.html">Информация</a></li>
         <li><a href="blank.html">Фото и видео</a></li>
@@ -28,6 +29,7 @@
   </header>
 
   <main class="container">
+
     <section class="welcome-section">
       <h2 class="visually-hidden">приветствие</h2>
       <div class="background-photo">
@@ -62,21 +64,21 @@
     <section class="features"><!-- ТРОЙНОЙ БЛОК С УСЛУГАМИ-->
       <h2 class="visually-hidden">Услуги</h2>
       <ul class="features-list">
-        <li class="feature-item1">
+        <li class="feature-item">
           <div class="icon-house">
             <img src="img/index-img/icon-house.png" width="75" height="72" alt="дом иконка">
           </div>
           <h3>Жилье</h3>
           <p>Рекомендуем пожить в настоящем<br>мотеле, все как в кино!</p>
         </li>
-        <li class="feature-item2">
+        <li class="feature-item">
           <div class="icon-burger">
             <img src="img/index-img/icon-burger.png" width="75" height="70" alt="бургер иконка">
           </div>
           <h3>Еда</h3>
           <p>Всегда заказывайте фирменные бургер,<br> вы не разочаруетесь!</p>
         </li>
-        <li class="feature-item3">
+        <li class="feature-item">
           <div class="icon-gift">
             <img src="img/index-img/icon-gift.png" width="64" height="77" alt="подарок иконка">
           </div>
@@ -97,19 +99,19 @@
       </div>
     </section>
 
-    <section class="content-quality">
-      <ul class="blok-list">
-        <li class="square-item">
+    <section class="content-quality"><!--ТРИ КАЧЕСТВА-->
+      <ul class="quality-list">
+        <li class="quality-item">
           <h3>Небольшая<br>площадь</h3>
           <p>-№3-</p>
           <p>Все достопримечательности<br>находятся очень близко</p>
         </li>
-        <li class="road-item">
+        <li class="quality-item">
           <h3>Красивая<br>дорога</h3>
           <p>-№4-</p>
           <p>Ехать в седону из Лас-вегаса совсем<br>не скучно</p>
         </li>
-        <li class="tourist-item">
+        <li class="quality-item">
           <h3>Мало<br>туристов</h3>
           <p>-№5-</p>
           <p>Большинство едет в Гранд каньон<br>и толпится там</p>
@@ -129,29 +131,32 @@
       <h2 class="visually-hidden">map</h2>
       <img src="img/index-img/map.jpg" width="1199" height="593" alt="Карта">
     </section>
+
   </main>
 
-  <footer class="footer">
-    <section class="contacts">
+  <footer class="main-footer">
+    <section class="footer-contacts">
       <h4 class="visually-hidden">Контакты</h4>
-      <div>
         <a class="visit" href="#">#visitsedona</a>
-        <a class="telephone" href="tel:+74956660166">ТЕЛ: +7(495)666-01-66</a>
-      </div>
+        <a class="contacts-phone" href="tel:+74956660166">ТЕЛ: +7(495)666-01-66</a>
     </section>
 
-    <section class="social-network">
+    <section class="footer-social">
       <h4 class="visually-hidden">Мы в соцсетях</h4>
-      <a class="vk" href="https://vk.com/">Вконтакте</a>
-      <a class="facebook" href="https://ru-ru.facebook.com/">Фейсбук</a>
-      <a class="instagram" href="https://www.instagram.com/">Инстаграм</a>
+      <a class="social-button" href="https://vk.com/">Вконтакте</a>
+      <a class="social-button" href="https://ru-ru.facebook.com/">Фейсбук</a>
+      <a class="social-button" href="https://www.instagram.com/">Инстаграм</a>
     </section>
 
-    <section class="block-academy">
+    <section class="footer-developer">
       <h4 class="visually-hidden">HTMLAcademy</h4>
+      <p>
+        Website by
+      </p>
       <a class="link-academy" href="https://htmlacademy.ru/intensive/htmlcss">html Academy</a>
     </section>
   </footer>
+
 </body>
 
 </html>
