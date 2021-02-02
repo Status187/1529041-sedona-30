@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Седона - Каталог"</title>
+  <title>"Седона-Каталог"</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/icon/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple.png">
@@ -14,18 +14,19 @@
 
 <body>
   <header>
-    <nav>
-      <ul>
+    <nav class="main-navigation">
+      <a class="header-logo" href="index.html">
+        <img src="img/index-img/logo.png" width="138" height="70" alt="Логотип «SEDONA»">
+        </a>
+      <ul class="site-navigation">
         <li><a href="blank.html">Информация</a></li>
         <li><a href="blank.html">Фото и видео</a></li>
         <li><a href="blank.html">Карта штата</a></li>
         <li><a href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
-    <a href="index.html">
-      <img src="img/index-img/logo.png" width="138" height="70" alt="Логотип «SEDONA»">
-    </a>
   </header>
+
   <main>
     <section>
       <form action="https://echo.htmlacademy.ru/" method="get">
@@ -114,7 +115,7 @@
     <section>
       <div>
         <div>
-          <img src="img/catalog/amara-resort.png" width="135" height="90" alt="поляна с видом на гору">
+          <img src="img/catalog/amara.jpg" width="135" height="90" alt="поляна с видом на гору">
         </div>
         <div>
           <h2>amara resort & spa</h2>
@@ -138,7 +139,7 @@
       </div>
       <div>
         <div>
-          <img src="img/catalog/desert-quailinn.png" width="135" height="90" alt="дорога и вьезд">
+          <img src="img/catalog/desert.jpg" width="135" height="90" alt="дорога и вьезд">
         </div>
         <div>
           <h2>desert quailinn</h2>
@@ -162,7 +163,7 @@
       </div>
       <div>
         <div>
-          <img src="img/catalog/villas-at-poco-diablo.png" width="135" height="90" alt="поляна с деревьями и домом">
+          <img src="img/catalog/villas.jpg" width="135" height="90" alt="поляна с деревьями и домом">
         </div>
         <div>
           <h2>villas at poco diablo</h2>
@@ -186,23 +187,26 @@
       </div>
     </section>
   </main>
-  <footer>
-    <section>
+
+  <footer class="footer">
+    <section class="contacts">
       <h4 class="visually-hidden">Контакты</h4>
       <div>
-        <a href="#">#visitsedona</a>
-        <a href="tel:+74956660166">ТЕЛ: +7(495)666-01-66</a>
+        <a class="visit" href="#">#visitsedona</a>
+        <a class="telephone" href="tel:+74956660166">ТЕЛ: +7(495)666-01-66</a>
       </div>
     </section>
-    <section>
+
+    <section class="social-network">
       <h4 class="visually-hidden">Мы в соцсетях</h4>
-      <a href="https://vk.com/">Вконтакте</a>
-      <a href="https://ru-ru.facebook.com/">Фейсбук</a>
-      <a href="https://www.instagram.com/">Инстаграм</a>
+      <a class="vk" href="https://vk.com/">Вконтакте</a>
+      <a class="facebook" href="https://ru-ru.facebook.com/">Фейсбук</a>
+      <a class="instagram" href="https://www.instagram.com/">Инстаграм</a>
     </section>
-    <section>
+
+    <section class="block-academy">
       <h4 class="visually-hidden">HTMLAcademy</h4>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">html Academy</a>
+      <a class="link-academy" href="https://htmlacademy.ru/intensive/htmlcss">html Academy</a>
     </section>
   </footer>
 </body>
