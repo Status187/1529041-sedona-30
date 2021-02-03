@@ -1,3 +1,38 @@
+@font-face {
+  font-family: "pt-sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+       url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "pt-sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/ptsans-bold.woff2") format("woff2"),
+       url("../fonts/ptsans-bold.woff") format("woff");
+}
+
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-gray-shade-of-black: #231F20;
+  --basic-light-blue: #81B3D3;
+  --basic-light-blue-background: #81B3D2;
+  --basic-dark-grey: #666666;
+  --basic-dark-gray-orange: #766458;
+  --basic-gray-orange: #766357;
+  --basic-twilight-Grey: #333333;
+  --basic-pale-gray: #F2F2F2;
+  --basic-white: #ffffff;
+  --basic-darkgray: #a9a9a9;
+  --basic-pale-grey: #F2F2F2;
+  --basic-light-grey: #cacaca;
+  --basic-mercury: #e5e5e5;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -18,3 +53,11 @@
   list-style: none;
 }
 
+
+body {
+  font-family: "pt-sans";
+  font-weight: 400;
+  font-style: normal;
+  text-align : center;
+  text-transform: uppercase;
+}
