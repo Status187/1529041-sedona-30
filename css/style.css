@@ -20,17 +20,116 @@
   --basic-black: #000000;
   --basic-gray-shade-of-black: #231F20;
   --basic-light-blue: #81B3D3;
-  --basic-light-blue-background: #81B3D2;
-  --basic-dark-grey: #666666;
+  --basic-light-blue-two: #81B3D2;
+  --basic-dark-grey-direct-energy: #666666;
+  --basic-dark-grey: #6A6A6A;
   --basic-dark-gray-orange: #766458;
+  --basic-dark-gray-orange-two: #604E43;
   --basic-gray-orange: #766357;
   --basic-twilight-Grey: #333333;
   --basic-pale-gray: #F2F2F2;
-  --basic-white: #ffffff;
-  --basic-darkgray: #a9a9a9;
+  --basic-white: #FFFFFF;
+  --basic-darkgray: #A9A9A9;
   --basic-pale-grey: #F2F2F2;
-  --basic-light-grey: #cacaca;
-  --basic-mercury: #e5e5e5;
+  --basic-light-grey: #CACACA;
+  --basic-mercury: #E5E5E5;
+  --basic-gray: #ABABAB;
+  --basic-grayish-azure: #669EC0;
+  --basic-grayish-azure-two: #5496BD;
+  --basic-delicious: #EEEEEE;
+}
+
+body {
+  font-family: "pt-sans";
+  font-weight: normal;
+  font-style: normal;
+  text-align : center;
+  text-transform: uppercase;
+}
+
+a {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.site-navigation {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  list-style: none;
+}
+
+.site-navigation :hover {
+  color: var(--basic-light-blue-two);
+}
+
+.scription-top {
+  background-color: var(--basic-white);
+}
+
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.text-p {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.bottom-p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.popap {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  background: var(--basic-gray-orange);
+  color: var(--basic-white);
+}
+
+.content-text {
+  background: var(--basic-light-blue-two);
+  color: var(--basic-white);
+}
+
+p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.features {
+  background: var(--basic-white);
+}
+
+.content-quality {
+  background: var(--basic-delicious);
 }
 
 .visually-hidden {
@@ -41,11 +140,7 @@
   margin: -1px;
   }
 
-.site-navigation {
-  list-style: none;
-  }
-
-.features-list {
+.quality-item {
   list-style: none;
   }
 
@@ -53,11 +148,16 @@
   list-style: none;
 }
 
-
-body {
-  font-family: "pt-sans";
-  font-weight: 400;
+.visit {
   font-style: normal;
-  text-align : center;
-  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.contacts-phone {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
 }
