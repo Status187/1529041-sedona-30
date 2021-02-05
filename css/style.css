@@ -124,6 +124,10 @@ p {
   line-height: 21px;
 }
 
+.features-list {
+  list-style: none;
+}
+
 .features {
   background: var(--basic-white);
 }
@@ -162,8 +166,116 @@ p {
   line-height: 26px;
 }
 
-/*РАЗМЕТКА КАТАЛОГА*/
+/*!!РАЗМЕТКА КАТАЛОГА!!*/
+
+/*стили чекбоксов и шкала цен*/
 
 .property-list {
   list-style: none;
 }
+
+.select-menu {
+  background-image: url(../img/catalog/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1200px;
+}
+
+h2 {
+  font-family: pt-sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+
+.property-list {
+  color: var(--basic-white);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.prise-menu {
+  color: var(--basic-white);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.submit {
+  font-family: "pt-sans";
+  font-weight: normal;
+  font-style: normal;
+  text-align : center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+}
+/*стили сортировочного меню*/
+
+.sorting-found {
+  font-weight: normal;
+  font-style: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sorting-sort {
+  font-size: 12px;
+  line-height: 18px;
+}
+.sorting-list {
+  list-style: none;
+}
+
+.sorting-list :hover {
+  color: var(--basic-grayish-azure-two);
+}
+
+/*стили секции с картинками*/
+
+.result-haeder {
+  font-weight: normal;
+  font-style: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotel-main {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.bottom-hotel {
+  font-weight: normal;
+  font-style: bold;
+  font-size: 14px;
+  line-height: 21px;
+  background: var(--basic-light-blue-two);
+  color: var(--basic-white);
+}
+
+.bottom-hotel2 {
+  font-weight: normal;
+  font-style: bold;
+  font-size: 14px;
+  line-height: 21px;
+  background: var(--basic-gray-orange);
+  color: var(--basic-white);
+}
+
+.rating-number {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  background: var(--basic-pale-gray);
+  color: var(--basic-dark-grey-direct-energy);
+}
+

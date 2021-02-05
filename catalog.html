@@ -52,17 +52,17 @@
         <div class="property-container2">
           <h2>тип жилья:</h2>
           <ul class="property-list">
-            <li class="property-list">
+            <li class="property-item">
               <input type="checkbox" name="hotel" id="filter-hotel" checked>
               <label for="filter-hotel">гостиница
               </label>
             </li>
-            <li class="property-list">
+            <li class="property-item">
               <input type="checkbox" name="motel" id="filter-motel" checked>
               <label for="filter-motel">мотель
               </label>
             </li>
-            <li class="property-list">
+            <li class="property-item">
               <input type="checkbox" name="apartments" id="filter-apartments" checked>
               <label for="filter-apartments">апартаменты
               </label>
@@ -80,15 +80,19 @@
               <span>до</span>
               <input type="text" name="before" value="3000" id="value-before">
             </label>
-            <div>
-              <!-- тут шкала с окружностями... потов в css!))-->
+            <div class="cost-range">
+              <div class="line-range">
+                <span class="line-bar"></span>
+              </div>
+              <span class="toggle toggle-left"></span>
+              <span class="toggle toggle-right"></span>
             </div>
             <button class="submit" type="submit" name="demonstrate">показать</button>
           </div>
         </div>
-        <div class="background-img">
+        <!--<div class="background-img">
           <img src="img/catalog/background.jpg" width="1200" height="217" alt="Фон с размытием">
-        </div>
+        </div>-->
       </form>
     </section>
 
@@ -101,7 +105,7 @@
         <span>сортировка:</span>
         <ul class="sorting-list">
           <li class="sorting-item">
-            <a href="#">по цене</a>
+            <a class="sorting-active">по цене</a>
           </li>
           <li class="sorting-item">
             <a href="#">по типу</a>
@@ -124,15 +128,15 @@
         </div>
         <div class="result-description">
           <h2 class="result-haeder">
-            <a href="#">amara resort & spa</a>
+            <a  href="#">amara resort & spa</a>
           </h2>
           <div class="description-hotel">
-            <span>гостиница</span>
-            <a href="#">подробнее</a>
+            <span class="hotel-main">гостиница</span>
+            <a class="bottom-hotel" href="#">подробнее</a>
           </div>
           <div class="description-reserve">
-            <span>от 4000 р.</span>
-            <a href="#">забронировать</a>
+            <span class="hotel-main">от 4000 р.</span>
+            <a class="bottom-hotel2" href="#">забронировать</a>
           </div>
         </div>
         <div class="rating-item">
@@ -143,7 +147,7 @@
             <span class="img-star"></span>
           </div>
           <div class="rating-value">
-            <span>рейтинг: 8,5</span>
+            <span class="rating-number">рейтинг: 8,5</span>
           </div>
         </div>
       </article>
@@ -156,12 +160,12 @@
             <a href="#">desert quail inn</a>
           </h2>
           <div class="description-hotel">
-            <span>мотель</span>
-            <a href="#">подробнее</a>
+            <span class="hotel-main">мотель</span>
+            <a class="bottom-hotel" href="#">подробнее</a>
           </div>
           <div class="description-reserve">
-            <span>от 3000 р.</span>
-            <a href="#">забронировать</a>
+            <span class="hotel-main">от 3000 р.</span>
+            <a class="bottom-hotel2" href="#">забронировать</a>
           </div>
         </div>
         <div class="rating-item">
@@ -171,7 +175,7 @@
             <span class="img-star"></span>
           </div>
           <div class="rating-value">
-            <span>рейтинг: 8,9</span>
+            <span class="rating-number">рейтинг: 8,9</span>
           </div>
         </div>
       </article>
@@ -184,12 +188,12 @@
             <a href="#">villas at poco diablo</a>
           </h2>
           <div class="description-hotel">
-            <span>апартаменты</span>
-            <a href="#">подробнее</a>
+            <span class="hotel-main">апартаменты</span>
+            <a class="bottom-hotel" href="#">подробнее</a>
           </div>
           <div class="description-reserve">
             <span>от 2000 р.</span>
-            <a href="#">забронировать</a>
+            <a class="bottom-hotel2" href="#">забронировать</a>
           </div>
         </div>
         <div class="rating-item">
@@ -198,7 +202,7 @@
             <span class="img-star"></span>
           </div>
           <div class="rating-value">
-            <span>рейтинг: 9,2</span>
+            <span class="rating-number">рейтинг: 9,2</span>
           </div>
         </div>
       </article>
