@@ -249,7 +249,7 @@ img {
 /*стили чекбоксов и шкала цен*/
 
 .inner-page {
-  font-family: "pt-sans";
+  font-family: "pt-sans", "arial", sans-serif;
   font-weight: normal;
   font-style: normal;
   text-align : center;
