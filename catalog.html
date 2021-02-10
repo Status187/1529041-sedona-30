@@ -31,7 +31,9 @@
   <main>
 
     <section class="select-menu">
+
       <form class="form-select" action="https://echo.htmlacademy.ru/" method="get">
+
         <div class="property-container">
           <h2>инфраструктура:</h2>
           <ul class="property-list">
@@ -49,7 +51,8 @@
             </li>
           </ul>
         </div>
-        <div class="property-container2">
+
+        <div class="property-container-two">
           <h2>тип жилья:</h2>
           <ul class="property-list">
             <li class="property-item">
@@ -69,6 +72,7 @@
             </li>
           </ul>
         </div>
+
         <div class="price-selection">
           <h2>стоимость в сутки (р):</h2>
           <div class="prise-menu">
@@ -87,23 +91,22 @@
               <span class="toggle toggle-left"></span>
               <span class="toggle toggle-right"></span>
             </div>
-            <button class="submit" type="submit" name="demonstrate">показать</button>
+            <button type="submit" name="demonstrate">показать</button>
           </div>
         </div>
         <!--<div class="background-img">
           <img src="img/catalog/background.jpg" width="1200" height="217" alt="Фон с размытием">
         </div>-->
       </form>
+
     </section>
 
     <section class="sorting-menu">
       <h2 class="visually-hidden">фильтр</h2>
-      <div class="sorting-found">
-        <h4>найдено: 3</h4>
-      </div>
       <div class="sorting-sort">
-        <span>сортировка:</span>
         <ul class="sorting-list">
+          <li><h4>найдено: 3</h4></li>
+          <li>сортировка:</li>
           <li class="sorting-item">
             <a class="sorting-active">по цене</a>
           </li>
@@ -121,22 +124,24 @@
     </section>
 
     <section class="result-block">
+
       <h3 class="visually-hidden">вывод гостиниц</h3>
-      <article class="result-item">
+
+      <article class="result-item grid-menu-one">
         <div class="result-picture">
           <img src="img/catalog/amara.jpg" width="135" height="90" alt="поляна с видом на гору">
         </div>
         <div class="result-description">
-          <h2 class="result-haeder">
+          <h3 class="result-haeder">
             <a href="#">amara resort & spa</a>
-          </h2>
+          </h3>
           <div class="description-hotel">
             <span class="hotel-main">гостиница</span>
-            <a class="bottom-hotel" href="#">подробнее</a>
+            <span class="hotel-main">от 4000 р.</span>
           </div>
           <div class="description-reserve">
-            <span class="hotel-main">от 4000 р.</span>
-            <a class="bottom-hotel2" href="#">забронировать</a>
+            <a href="#">подробнее</a>
+            <a href="#">забронировать</a>
           </div>
         </div>
         <div class="rating-item">
@@ -146,26 +151,25 @@
             <span class="img-star"></span>
             <span class="img-star"></span>
           </div>
-          <div class="rating-value">
-            <span class="rating-number">рейтинг: 8,5</span>
-          </div>
+          <span class="rating-number">рейтинг: 8,5</span>
         </div>
       </article>
-      <article class="result-block">
+
+      <article class="result-block grid-menu-one">
         <div class="result-picture">
           <img src="img/catalog/desert.jpg" width="135" height="90" alt="дорога и вьезд">
         </div>
         <div class="result-description">
-          <h2 class="result-haeder">
+          <h3 class="result-haeder">
             <a href="#">desert quail inn</a>
-          </h2>
+          </h3>
           <div class="description-hotel">
             <span class="hotel-main">мотель</span>
-            <a class="bottom-hotel" href="#">подробнее</a>
+            <span class="hotel-main">от 3000 р.</span>
           </div>
           <div class="description-reserve">
-            <span class="hotel-main">от 3000 р.</span>
-            <a class="bottom-hotel2" href="#">забронировать</a>
+            <a  href="#">подробнее</a>
+            <a href="#">забронировать</a>
           </div>
         </div>
         <div class="rating-item">
@@ -174,26 +178,25 @@
             <span class="img-star"></span>
             <span class="img-star"></span>
           </div>
-          <div class="rating-value">
-            <span class="rating-number">рейтинг: 8,9</span>
-          </div>
+          <span class="rating-number">рейтинг: 8,9</span>
         </div>
       </article>
-      <article class="result-block">
+
+      <article class="result-block grid-menu-one">
         <div class="result-picture">
           <img src="img/catalog/villas.jpg" width="135" height="90" alt="поляна с деревьями и домом">
         </div>
         <div class="result-description">
-          <h2 class="result-haeder">
+          <h3 class="result-haeder">
             <a href="#">villas at poco diablo</a>
-          </h2>
+          </h3>
           <div class="description-hotel">
             <span class="hotel-main">апартаменты</span>
-            <a class="bottom-hotel" href="#">подробнее</a>
+            <span>от 2000 р.</span>
           </div>
           <div class="description-reserve">
-            <span>от 2000 р.</span>
-            <a class="bottom-hotel2" href="#">забронировать</a>
+            <a href="#">подробнее</a>
+            <a href="#">забронировать</a>
           </div>
         </div>
         <div class="rating-item">
@@ -201,9 +204,7 @@
             <span class="img-star"></span>
             <span class="img-star"></span>
           </div>
-          <div class="rating-value">
-            <span class="rating-number">рейтинг: 9,2</span>
-          </div>
+          <span class="rating-number">рейтинг: 9,2</span>
         </div>
       </article>
     </section>
