@@ -81,6 +81,7 @@
   position: absolute;
   top: 0;
   left: 50%;
+  right: 50%;
   margin-left: -70px;
 }
 
@@ -93,7 +94,7 @@
 .main-header {
   display: inline-block;
   width: 1200px;
-  height: 130px;
+  height: 56px;
 }
 
 .site-navigation {
@@ -134,15 +135,14 @@
   text-align: right;
 }
 
-.site-navigation :hover {
+.site-navigation:hover {
   color: var(--basic-light-blue-two);
 }
 
 .scription-top {
   width: 1200px;
-  height: 216px;
+  height: 210px;
   text-align: center;
-  padding-top: 42.5px;
   padding-bottom: 1px;
   background-color: var(--basic-white);
 }
@@ -152,6 +152,7 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  margin-top: 43px;
 }
 
 .page-body h3 {
@@ -164,6 +165,23 @@
 .scription-text p {
   font-size: 14px;
   line-height: 26px;
+  margin-top: 45px;
+}
+
+.content-text h3 {
+  margin-top: 46px;
+}
+
+.content-text :nth-child(2) {
+  margin-top: 27px;
+}
+
+.content-text :nth-child(3) {
+  margin-top: 25px;
+}
+
+.content-text :last-child {
+  margin-top: -13px;
 }
 
 .container p {
@@ -208,7 +226,23 @@
 
 .feature-item {
   width: 400px;
-  height: 256px;
+  height: 330px;
+}
+
+.icon-svg {
+  margin-top: 60px;
+}
+
+.feature-item h3 {
+  margin-top: 25px;
+}
+
+.feature-item :nth-child(3) {
+  margin-top: 25px;
+}
+
+.feature-item :nth-child(4) {
+  margin-top: -15px;
 }
 
 .feature-item p {
@@ -238,6 +272,24 @@
 
 .quality-item {
   list-style: none;
+  width: 400px;
+  height: 256px;
+}
+
+.quality-item h3{
+  margin-top: 47px;
+}
+
+.quality-item :nth-child(2){
+  margin-top: 25px;
+}
+
+.quality-item :nth-child(3){
+  margin-top: 25px;
+}
+
+.quality-item :nth-child(4){
+  margin-top: -11px;
 }
 
 .blok-list {
@@ -258,7 +310,7 @@
   line-height: 26px;
 }
 
-/*!!РАЗМЕТКА КАТАЛОГА!!*/
+/****************************************************************************!!РАЗМЕТКА КАТАЛОГА!!*/
 
 /*стили чекбоксов и шкала цен*/
 
@@ -300,7 +352,7 @@
 }
 
 .property-container {
-  width: 300px;
+  width: 256px;
   height: 217px;
   text-align: left;
 }
@@ -341,7 +393,86 @@
   font-size: 14px;
   line-height: 21px;
 }
-/*стили сортировочного меню*/
+/**********************************************************FILTER CHECKBOX*/
+
+.check {
+  padding-left: 3em;
+}
+
+.check-two {
+  padding-left: 3em;
+}
+
+.check-input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.property-item label {
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 25px;
+}
+
+.check-box {
+  position: absolute;
+  margin-left: -2.7em;
+  width: 2em;
+  height: 2em;
+  background-image: url(../img/catalog/checkbox-off.svg);
+  background-repeat: no-repeat;
+  margin-left: -41px;
+}
+
+.check-input:checked + .check-box {
+  background-image: url(../img/catalog/checkbox-on.svg);
+}
+
+.check-input:active + .check-box {
+  background-image: url(../img/catalog/checkbox-off.svg);
+}
+
+.check-input:disabled + .check-box {
+  background-image: url(../img/catalog/checkdis-off.svg);
+}
+
+.check-input:checked:disabled + .check-box {
+  background-image: url(../img/catalog/checkdis-on.svg);
+}
+
+/******************************************************************************************************************ФИЛЬТР С ДИАПАЗОНОМ*/
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-controls {
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.range-controls .bar {
+  width: 316px;
+  height: 222px;
+  background: var(--basic-white);
+}
+
+.range-controls .scale {
+  height: 22px;
+  background: var(--basic-white);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+/*****************************************стили сортировочного меню*/
 
 .sorting-sort {
   font-size: 12px;
@@ -358,36 +489,59 @@
 
 .result-haeder h3 {
   font-weight: normal;
-  font-style: bold;
   font-size: 21px;
   line-height: 26px;
 }
 
-.hotel-main {
+.description-hotel {
+  display: grid;
+  grid-template-columns: 110px 110px;
+  column-gap: 5px;
+}
+
+.description-hotel:nth-child(1) span {
+  text-align: left;
   font-weight: normal;
   font-style: normal;
   font-size: 14px;
   line-height: 21px;
 }
 
-.description-reserve a:nth-child(1) {
+.description-hotel:nth-child(2) span {
+  text-align: left;
   font-weight: normal;
-  font-style: bold;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.description-reserve {
+  display: flex;
+  justify-content: space-between;
+  width: 257px;
+  margin-top: 18px;
+}
+
+.description-reserve a:nth-child(1) {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-white);
   background: var(--basic-light-blue-two);
-  padding: 3px 15px;
+  padding: 3px 17px;
 }
 
 .description-reserve a:nth-child(2) {
-  font-weight: normal;
-  font-style: bold;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-white);
   background: var(--basic-gray-orange);
-  padding: 3px 15px;
+  padding: 3px 16px;
 }
 
 .rating-number {
@@ -400,13 +554,55 @@
 }
 
 .name-hotel {
-  font-weight: normal;
-  font-style: bold;
+  font-weight: normal;/*
+  font-style: bold;*/
   font-size: 21px;
   line-height: 26px;
 }
 
-/*GRID TITLE*/
+/***************************************************rating STAR*/
+
+.rating-item {
+  position: absolute;
+  display: block;
+  height: 100px;
+  width: 130px;
+  left: 1007px;/*
+  outline-offset: -2px;
+  outline: 2px solid rgba(21, 38, 192, 0.7);*/
+}
+
+.rating-star {
+  display:flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 72px;
+  width: 125px;/*
+  outline-offset: -2px;
+  outline: 2px solid rgba(85, 207, 105, 0.7);*/
+}
+
+.img-star {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/catalog/star.svg);
+  background-repeat: no-repeat;
+  background-position: center;/*
+  outline-offset: -2px;
+  outline: 2px solid rgba(85, 207, 105, 0.7);*/
+}
+
+.rating-number {
+  padding: 5px 14px 5px 14px;
+  background-color: #f2f2f2;
+  text-align: center;
+  width: 110px;/*
+  outline-offset: -2px;
+  outline: 2px solid rgba(85, 207, 105, 0.7);*/
+}
+
+/********************************************************************GRID TITLE*/
 
 .content-block {
   display: grid;
@@ -425,14 +621,14 @@
 
 .list-box-two {
   display: grid;
-  grid-template-rows: 256px auto auto;
+  grid-template-rows: 256px;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   margin: 0px;
   padding-left: 0px;
 }
 
-/*FLEX INDEX*/
+/******************************************************************FLEX INDEX*/
 
 .site-navigation {
   display: flex;
@@ -469,7 +665,7 @@
   background-position: center;
   align-items: center;
   justify-content: center;
-  margin-top: -76px;
+  margin-top: -1px;
 }
 
 .welcome-title {
@@ -504,15 +700,14 @@
   margin-top: 56px;
 }
 
-/*FOOTER*/
-
+/*******************************************************************FOOTER*/
 
 .main-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   width: 1200px;
-  padding: 37px 0px;
+  height: 120px;
   align-items: center;
 }
 
@@ -526,7 +721,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 150px;
-  margin: 0 auto;
+  margin: 0 -60px;
   padding: 0;
 
 }
@@ -556,7 +751,14 @@
 .footer-contacts {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
 }
+
+.visit {
+  margin: 10px;
+}
+
 
 .footer-social {
   display: flex;
@@ -592,12 +794,12 @@
   mix-blend-mode: normal;
   opacity: 0.3;
 }
-/*FLEX CATALOG*/
+/**********************************************************FLEX CATALOG*/
 
 .form-select {
   display: flex;
-  padding: 0 72px;
-  margin-top: -76px;
+  padding: 0 72px;/*
+  margin-top: -76px;*/
 }
 
 .property-item {
@@ -622,7 +824,6 @@
 .property-container-two h2 {
   margin-top: 25px;
   margin-bottom: 20px;
-  margin-left: -45px;
 }
 
 .price-selection h2 {
@@ -630,7 +831,7 @@
   margin-bottom: 20px;
   margin-left: 90px;
 }
-
+/*
 .property-item input[type="checkbox"] + label {
   display: block;
   padding-left: 40px;
@@ -638,7 +839,7 @@
   cursor: pointer;
   margin-left: -40px;
 }
-
+*/
 .sorting-menu {
   display: flex;
   border-bottom: 1px solid var(--basic-mercury);
@@ -704,6 +905,14 @@
   text-decoration: none;
   color: #000000;
 }
+/*
+.description-reserve a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+}*/
 
 .result-haeder {
   margin-top: 0px;

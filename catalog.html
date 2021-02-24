@@ -25,7 +25,7 @@
           <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a></li>
           <li><a href="blank.html">Карта штата</a></li>
-          <li class="active"><a a href="blank.html">Гостиницы</a></li>
+          <li class="active"><a href="blank.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -39,17 +39,26 @@
           <div class="property-container">
             <h2>инфраструктура:</h2>
             <ul class="property-list">
-              <li class="property-item">
-                <input type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
-                <label for="filter-swimming-pool">бассейн</label>
+              <li class="property-item filter-input-checkbox">
+                <label class="check">
+                  <input class="check-input" type="checkbox" name="swimming-pool" checked>
+                  <span class="check-box"></span>
+                  бассейн
+                </label>
               </li>
-              <li class="property-item">
-                <input type="checkbox" name="parking" id="filter-parking">
-                <label for="filter-parking">парковка</label>
+              <li class="property-item filter-input-checkbox">
+                <label class="check" for="filter-parking">
+                  <input class="check-input" type="checkbox" name="parking" id="filter-parking">
+                  <span class="check-box"></span>
+                  парковка
+                </label>
               </li>
-              <li class="property-item">
-                <input type="checkbox" name="wi-fi" id="filter-wi-fi">
-                <label for="filter-wi-fi">wi-fi</label>
+              <li class="property-item filter-input-checkbox">
+                <label class="check" for="filter-wi-fi">
+                  <input class="check-input" type="checkbox" name="wi-fi" id="filter-wi-fi">
+                  <span class="check-box"></span>
+                  wi-fi
+                </label>
               </li>
             </ul>
           </div>
@@ -57,41 +66,52 @@
           <div class="property-container-two">
             <h2>тип жилья:</h2>
             <ul class="property-list">
-              <li class="property-item">
-                <input type="checkbox" name="hotel" id="filter-hotel" checked>
-                <label for="filter-hotel">гостиница</label>
+              <li class="property-item filter-input-checkbox">
+                <label class="check-two">
+                  <input class="check-input" type="checkbox" name="hotel" checked>
+                  <span class="check-box"></span>
+                  гостиница
+                </label>
               </li>
-              <li class="property-item">
-                <input type="checkbox" name="motel" id="filter-motel" checked>
-                <label for="filter-motel">мотель</label>
+              <li class="property-item filter-input-checkbox">
+                <label class="check-two">
+                  <input class="check-input" type="checkbox" name="motel" checked>
+                  <span class="check-box"></span>
+                  мотель
+                </label>
               </li>
-              <li class="property-item">
-                <input type="checkbox" name="apartments" id="filter-apartments" checked>
-                <label for="filter-apartments">апартаменты</label>
+              <li class="property-item filter-input-checkbox">
+                <label class="check-two">
+                  <input class="check-input" type="checkbox" name="apartments" checked>
+                  <span class="check-box"></span>
+                  апартаменты
+                </label>
               </li>
             </ul>
           </div>
 
           <div class="price-selection">
-            <h2>стоимость в сутки (р):</h2>
-            <div class="prise-menu">
-              <label class="label-from">
-                <span>от</span>
-                <input type="text" name="from" value="0" id="value-from">
-              </label>
-              <label class="label-before">
-                <span>до</span>
-                <input type="text" name="before" value="3000" id="value-before">
-              </label>
-              <div class="cost-range">
-                <div class="line-range">
-                  <span class="line-bar"></span>
-                </div>
-                <span class="toggle toggle-left"></span>
-                <span class="toggle toggle-right"></span>
-              </div>
-              <button type="submit" name="demonstrate">показать</button>
-            </div>
+            <legend><h2>стоимость в сутки (р):</h2></legend>
+              <fieldset class="filter-item">
+                <div class="prise-menu">
+                 <label class="label-from">
+                   от <input type="number" name="min-price" value="0" id="value-from">
+                 </label>
+                 <label class="label-before">
+                   до <input type="number" name="max-price" value="3000" id="value-before">
+                 </label>
+                 <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <button type="submit" name="demonstrate">показать</button>
+                  </div>
+                <\div>
+              </fieldset>
           </div>
         </form>
 
@@ -190,7 +210,7 @@
             </h3>
             <div class="description-hotel">
               <span class="hotel-main">апартаменты</span>
-              <span>от 2000 р.</span>
+              <span class="hotel-main">от 2000 р.</span>
             </div>
             <div class="description-reserve">
               <a href="#">подробнее</a>
