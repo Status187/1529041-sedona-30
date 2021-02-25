@@ -37,80 +37,82 @@
         <form class="form-select" action="https://echo.htmlacademy.ru/" method="get">
 
           <div class="property-container">
-            <h2>инфраструктура:</h2>
+            <h2>Инфраструктура:</h2>
             <ul class="property-list">
               <li class="property-item filter-input-checkbox">
                 <label class="check">
                   <input class="check-input" type="checkbox" name="swimming-pool" checked>
                   <span class="check-box"></span>
-                  бассейн
+                  <span class="label-padding">Бассейн</span>
                 </label>
               </li>
               <li class="property-item filter-input-checkbox">
                 <label class="check" for="filter-parking">
                   <input class="check-input" type="checkbox" name="parking" id="filter-parking">
                   <span class="check-box"></span>
-                  парковка
+                  <span class="label-padding">Парковка</span>
                 </label>
               </li>
               <li class="property-item filter-input-checkbox">
                 <label class="check" for="filter-wi-fi">
                   <input class="check-input" type="checkbox" name="wi-fi" id="filter-wi-fi">
                   <span class="check-box"></span>
-                  wi-fi
+                  <span class="label-padding">Wi-fi</span>
                 </label>
               </li>
             </ul>
           </div>
 
           <div class="property-container-two">
-            <h2>тип жилья:</h2>
+            <h2>Тип жилья:</h2>
             <ul class="property-list">
               <li class="property-item filter-input-checkbox">
                 <label class="check-two">
                   <input class="check-input" type="checkbox" name="hotel" checked>
                   <span class="check-box"></span>
-                  гостиница
+                  <span class="label-padding">Гостиница</span>
                 </label>
               </li>
               <li class="property-item filter-input-checkbox">
                 <label class="check-two">
                   <input class="check-input" type="checkbox" name="motel" checked>
                   <span class="check-box"></span>
-                  мотель
+                  <span class="label-padding">Мотель</span>
                 </label>
               </li>
               <li class="property-item filter-input-checkbox">
                 <label class="check-two">
                   <input class="check-input" type="checkbox" name="apartments" checked>
                   <span class="check-box"></span>
-                  апартаменты
+                  <span class="label-padding">Апартаменты</span>
                 </label>
               </li>
             </ul>
           </div>
 
           <div class="price-selection">
-            <legend><h2>стоимость в сутки (р):</h2></legend>
+            <h2>Стоимость в сутки (р):</h2>
               <fieldset class="filter-item">
-                <div class="prise-menu">
-                 <label class="label-from">
-                   от <input type="number" name="min-price" value="0" id="value-from">
-                 </label>
-                 <label class="label-before">
-                   до <input type="number" name="max-price" value="3000" id="value-before">
-                 </label>
-                 <div class="range-filter">
-                  <div class="range-controls">
-                    <div class="scale">
-                      <div class="bar"></div>
+                <div class="cost-control">
+                  <label class="label-from">
+                    <span>От</span>
+                    <input type="text" name="min-price" value="0" id="value-from">
+                  </label>
+                  <label class="label-before">
+                    <span>До</span>
+                    <input type="text" name="max-price" value="3000" id="value-before">
+                  </label>
+                </div>
+                  <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="toggle toggle-min" tabindex="0"></div>
+                      <div class="toggle toggle-max" tabindex="0"></div>
                     </div>
-                    <div class="toggle toggle-min"></div>
-                    <div class="toggle toggle-max"></div>
+                    <button type="submit" name="demonstrate">Показать</button>
                   </div>
-                  <button type="submit" name="demonstrate">показать</button>
-                  </div>
-                <\div>
               </fieldset>
           </div>
         </form>
@@ -118,21 +120,21 @@
       </section>
 
       <section class="sorting-menu">
-        <h2 class="visually-hidden">фильтр</h2>
+        <h2 class="visually-hidden">Фильтр</h2>
           <div class="found">
-            <span>найдено: 3</span>
+            <span>Найдено: 3</span>
           </div>
           <div class="sorting-item">
-            <span>сортировка:</span>
+            <span>Сортировка:</span>
             <ul class="sorting-list">
               <li>
-                <a class="sorting-active">по цене</a>
+                <a class="sorting-active">По цене</a>
               </li>
               <li>
-                <a href="#">по типу</a>
+                <a href="#">По типу</a>
               </li>
               <li>
-                <a href="#">по рейтингу</a>
+                <a href="#">По рейтингу</a>
               </li>
             </ul>
           </div>
@@ -143,7 +145,7 @@
 
       <section class="result-block">
 
-        <h3 class="visually-hidden">вывод гостиниц</h3>
+        <h3 class="visually-hidden">Вывод гостиниц</h3>
 
         <article class="result-item flex-menu">
           <div class="result-picture">
@@ -151,15 +153,15 @@
           </div>
           <div class="result-description">
             <h3 class="result-haeder">
-              <a href="#">amara resort & spa</a>
+              <a href="#">Amara resort & spa</a>
             </h3>
             <div class="description-hotel">
-              <span class="hotel-main">гостиница</span>
-              <span class="hotel-main">от 4000 р.</span>
+              <span class="hotel-main">Гостиница</span>
+              <span class="hotel-main">От 4000 р.</span>
             </div>
             <div class="description-reserve">
-              <a href="#">подробнее</a>
-              <a href="#">забронировать</a>
+              <a href="#">Подробнее</a>
+              <a href="#">Забронировать</a>
             </div>
           </div>
           <div class="rating-item">
@@ -169,7 +171,7 @@
               <span class="img-star"></span>
               <span class="img-star"></span>
             </div>
-            <span class="rating-number">рейтинг: 8,5</span>
+            <span class="rating-number">Рейтинг: 8,5</span>
           </div>
         </article>
 
@@ -179,15 +181,15 @@
           </div>
           <div class="result-description">
             <h3 class="result-haeder">
-              <a href="#">desert quail inn</a>
+              <a href="#">Desert quail inn</a>
             </h3>
             <div class="description-hotel">
-              <span class="hotel-main">мотель</span>
-              <span class="hotel-main">от 3000 р.</span>
+              <span class="hotel-main">Мотель</span>
+              <span class="hotel-main">От 3000 р.</span>
             </div>
             <div class="description-reserve">
-              <a  href="#">подробнее</a>
-              <a href="#">забронировать</a>
+              <a  href="#">Подробнее</a>
+              <a href="#">Забронировать</a>
             </div>
           </div>
           <div class="rating-item">
@@ -196,7 +198,7 @@
               <span class="img-star"></span>
               <span class="img-star"></span>
             </div>
-            <span class="rating-number">рейтинг: 8,9</span>
+            <span class="rating-number">Рейтинг: 8,9</span>
           </div>
         </article>
 
@@ -206,15 +208,15 @@
           </div>
           <div class="result-description">
             <h3 class="result-haeder">
-              <a href="#">villas at poco diablo</a>
+              <a href="#">Villas at poco diablo</a>
             </h3>
             <div class="description-hotel">
-              <span class="hotel-main">апартаменты</span>
-              <span class="hotel-main">от 2000 р.</span>
+              <span class="hotel-main">Апартаменты</span>
+              <span class="hotel-main">От 2000 р.</span>
             </div>
             <div class="description-reserve">
-              <a href="#">подробнее</a>
-              <a href="#">забронировать</a>
+              <a href="#">Подробнее</a>
+              <a href="#">Забронировать</a>
             </div>
           </div>
           <div class="rating-item">
@@ -222,7 +224,7 @@
               <span class="img-star"></span>
               <span class="img-star"></span>
             </div>
-            <span class="rating-number">рейтинг: 9,2</span>
+            <span class="rating-number">Рейтинг: 9,2</span>
           </div>
         </article>
       </section>
@@ -257,7 +259,7 @@
       </section>
 
       <section class="footer-developer">
-        <h4 class="visually-hidden">HTMLAcademy</h4>
+        <h4 class="visually-hidden">Htmlacademy</h4>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <span>Website by</span>
           <div class="link-academy">
