@@ -453,6 +453,9 @@
 /******************************************************************************************************************ФИЛЬТР С ДИАПАЗОНОМ*/
 
 .filter-item {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
   margin: 0;
   padding: 0;
   border: none;
@@ -511,7 +514,7 @@
   position: relative;
   margin-bottom: 20px;
   margin-left: 10px;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--basic-white);
   border-radius: 2px;
   height: 32px;
   width: 312px;
@@ -519,14 +522,16 @@
 
 .cost-control input {
   width: 40px;
-  padding: 7px;
-  margin-left: 30px;
-  text-align: center;
+  padding: 0px;
+  margin-top: 7px;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-align: left;
   color: #283136;
   border: none;
   border-radius: 5px;
   color: var(--basic-white);
-  background-color: rgba(171, 171, 171, 0);
+  background: none;
 }
 
 .cost-control label {
@@ -534,7 +539,8 @@
   vertical-align: middle;
   height: 34px;
   padding-left: 20px;
-  margin-left: 20px;
+  margin-right: 26px;
+  margin-left: 35px;
   cursor: pointer;
 }
 
@@ -563,6 +569,25 @@
 
 .price-selection span {
   color: var(--basic-white);
+}
+
+.cost-control::after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 50%;
+  height: 22px;
+  border: 1px solid var(--basic-white);
+}
+
+.arrows {
+  position: absolute;
+  right: 74px;
+  cursor: pointer;
+}
+
+.arrows-up {
+  padding-right: 7px;
 }
 /*****************************************стили сортировочного меню*/
 
