@@ -31,6 +31,7 @@
   --basic-white: #FFFFFF;
   --basic-darkgray: #A9A9A9;
   --basic-pale-grey: #F2F2F2;
+  --basic-pale-grey-two: #EBEBEB;
   --basic-light-grey: #CACACA;
   --basic-mercury: #E5E5E5;
   --basic-gray: #ABABAB;
@@ -39,6 +40,7 @@
   --basic-delicious: #EEEEEE;
   --basic-greyish: #888888;
   --basic-light-grey-two: #BDBBBC;
+  --basic-twilight-gray-orange: #503E33;
 }
 
 .page-body {
@@ -47,6 +49,7 @@
   font-style: normal;
   text-align: center;
   text-transform: uppercase;
+  padding: 0px 40px 0px 40px;    /*отступы, работают правильно только здесь*/
 }
 
 .container {
@@ -162,6 +165,15 @@
   line-height: 21px;
 }
 
+.result-haeder a:hover {
+  color: var(--basic-light-blue-two);
+}
+
+.result-haeder a:active {
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
 .scription-text p {
   font-size: 14px;
   line-height: 26px;
@@ -210,6 +222,15 @@
   font-style: normal;
   line-height: 26px;
   background: var(--basic-gray-orange);
+}
+
+.pop-up:hover {
+  background-color: var(--basic-dark-gray-orange-two);
+}
+
+.pop-up:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: var(--basic-twilight-gray-orange);
 }
 
 .content-text {
@@ -352,14 +373,12 @@
 }
 
 .property-container {
-  width: 256px;
-  height: 217px;
+  width: 276px;
   text-align: left;
 }
 
 .property-container-two {
   width: 300px;
-  height: 217px;
   text-align: left;
 }
 
@@ -397,19 +416,7 @@
   line-height: 21px;
 }
 /**********************************************************FILTER CHECKBOX*/
-/*
-.check {
-  padding-left: 3em;
-  outline-offset: -2px;
-  outline: 2px solid rgba(21, 38, 192, 0.7);
-}
 
-.check-two {
-  padding-left: 3em;
-  outline-offset: -2px;
-  outline: 2px solid rgba(21, 38, 192, 0.7);
-}
-*/
 .check-input {
   display: none;
 }
@@ -426,12 +433,21 @@
   position: absolute;
   width: 25px;
   height: 25px;
+  margin-bottom: 25px;
   background-image: url(../img/catalog/checkbox-off.svg);
   background-repeat: no-repeat;
 }
 
-.label-padding {
+.check > input + span {
   padding-left: 40px;
+}
+
+.check-two > input + span {
+  padding-left: 42px;
+}
+
+.property-list li {
+  margin-bottom: 20px;
 }
 
 .check-input:checked + .check-box {
@@ -489,10 +505,10 @@
 
 .range-controls .toggle {
   position: absolute;
-  top: -10px;
+  top: -8px;
   left: 16px;
-  width: 4px;
-  height: 4px;
+  width: 3.8px;
+  height: 3.8px;
   padding: 0px;
   border: 8px solid var(--basic-white);
   background-color: var(--basic-gray);
@@ -501,13 +517,24 @@
   box-shadow: 0px 2px 0 0 rgba(171, 171, 171, 0.3);
 }
 
+.select-menu :focus {
+  outline: none;
+}
 
 .range-controls .toggle-min {
   left: 10px;
 }
 
+.toggle-min:hover {
+  transform: scale(1.15);
+}
+
 .range-controls .toggle-max {
   left: 261px;
+}
+
+.toggle-max:hover {
+  transform: scale(1.15);
 }
 
 .cost-control {
@@ -559,6 +586,11 @@
     cursor: pointer;
 }
 
+.range-filter button:hover {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
 .label-from {
   padding-left: 64px;
 }
@@ -589,6 +621,22 @@
 .arrows-up {
   padding-right: 7px;
 }
+
+.arrows-up :hover {
+  fill: var(--basic-black);
+}
+
+.arrows-up :active {
+  fill: var(--basic-light-blue-two);
+}
+/*
+.arrows-down :hover {
+  fill: var(--basic-black);
+}
+
+.arrows-down :active {
+  fill: var(--basic-light-blue-two);
+}*/
 /*****************************************стили сортировочного меню*/
 
 .sorting-sort {
@@ -650,6 +698,15 @@
   padding: 3px 17px;
 }
 
+.description-reserve a:nth-child(1):hover {
+  background: var(--basic-grayish-azure)
+}
+
+.description-reserve a:nth-child(1):active {
+  background: var(--basic-grayish-azure-two);
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .description-reserve a:nth-child(2) {
   text-decoration: none;
   font-style: normal;
@@ -659,6 +716,15 @@
   color: var(--basic-white);
   background: var(--basic-gray-orange);
   padding: 3px 16px;
+}
+
+.description-reserve a:nth-child(2):hover {
+  background: var(--basic-dark-gray-orange-two)
+}
+
+.description-reserve a:nth-child(2):active {
+  background: var(--basic-twilight-gray-orange);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .rating-number {
@@ -794,7 +860,7 @@
 
 .shape-bottom {
   align-self: flex-end;
-  margin-bottom: -3px;
+  margin-bottom: -4px;
   order: 2;
 }
 
@@ -826,6 +892,13 @@
   width: 1200px;
   height: 120px;
   align-items: center;
+}
+
+.index-footer {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .main-footer a {
@@ -861,7 +934,6 @@
 .color-footer:active {
   background-color: var(--basic-grayish-azure-two);
   color: var(--basic-black);
-  mix-blend-mode: darken;
 }
 
 
@@ -901,22 +973,29 @@
 
 
 .link-academy {
-    width: 115px;
-    height: 41px;
-    background-repeat: no-repeat;
-    margin-left: 8px;
+  width: 115px;
+  height: 41px;
+  background-repeat: no-repeat;
+  margin-left: 8px;
 }
 
 .social:active path {
   mix-blend-mode: normal;
   opacity: 0.3;
 }
+
+.twitter-icon {
+  display: block;
+  width: 17px;
+  height: 16px;
+  fill: var(--basic-white)
+}
+
 /**********************************************************FLEX CATALOG*/
 
 .form-select {
   display: flex;
-  padding: 0 72px;/*
-  margin-top: -76px;*/
+  padding: 0 72px;
 }
 
 .property-item {
@@ -934,13 +1013,13 @@
 
 .property-container h2 {
   margin-top: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 27px;
   margin-left: 0px;
 }
 
 .property-container-two h2 {
   margin-top: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 27px;
 }
 
 .price-selection h2 {
@@ -948,15 +1027,7 @@
   margin-bottom: 13px;
   margin-right: 125px;
 }
-/*
-.property-item input[type="checkbox"] + label {
-  display: block;
-  padding-left: 40px;
-  position: relative;
-  cursor: pointer;
-  margin-left: -40px;
-}
-*/
+
 .sorting-menu {
   display: flex;
   border-bottom: 1px solid var(--basic-mercury);
@@ -976,19 +1047,64 @@
 
 .sorting-item {
   display: flex;
+  height: 20px;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 24px;
 }
 
-.sorting-list li{
+.sorting-list li {
   padding-right: 33px;
-  margin-top: -12px;
+  line-height: 0px;
 }
 
 .sorting-list {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+}
+
+.sorting-list :not(:nth-child(1)) a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted var(--basic-light-blue-two);
+}
+
+.sorting-active {
+  cursor: pointer;
+  color: var(--basic-light-blue-two);
+}
+
+.sorting-active:hover {
+  border-bottom: 1px dotted var(--basic-light-blue-two);
+}
+
+.sorting-active:active {
+  color: var(--basic-black);
+  border-bottom: none;
+}
+
+.sorting-list :nth-child(2) a:hover {
+  text-decoration: none;
+  color: var(--basic-light-blue-two);
+  border-bottom: 1px dotted var(--basic-light-blue-two);
+}
+
+.sorting-list :nth-child(2) a:active {
+  text-decoration: none;
+  color: var(--basic-black);
+  border-bottom: none;
+}
+
+
+.sorting-list :nth-child(3) a:hover {
+  text-decoration: none;
+  color: var(--basic-light-blue-two);
+  border-bottom: 1px dotted var(--basic-light-blue-two);
+}
+
+.sorting-list :nth-child(3) a:active {
+  text-decoration: none;
+  color: var(--basic-black);
+  border-bottom: none;
 }
 
 .result-block {
@@ -1022,20 +1138,270 @@
   text-decoration: none;
   color: #000000;
 }
-/*
-.description-reserve a {
-  text-decoration: none;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 21px;
-}*/
+
+.result-haeder a:active {
+  color: #000000;
+}
 
 .result-haeder {
   margin-top: 0px;
   margin-bottom: 10px;
 }
 
+/**************************************************************************МЕНЮ ПОИСК ГОСТИНИЦЫ*/
+
+.block-map {
+  position: relative;
+}
+
+.search {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 26.3%;
+  padding: 55px;
+  width: 569px;
+  height: 395px;
+  background: var(--basic-white);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  box-shadow: 0px 0px 15px 7px rgb( 0 1 1 / 15%);
+}
+
+.search .check-in {
+  padding-top: 5px;
+  margin-bottom: 10px;
+}
+
+.search .departure {
+  padding-top: 5px;
+  margin-bottom: 10px;
+}
+
+.search input {
+  border: medium none;
+  background-color: var(--basic-pale-grey);
+  height: 35px;
+  width: 331px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+.search input[name="date-in"] {
+  padding-left: 15px;
+}
+
+.search input[name="date-out"] {
+  padding-left: 15px;
+}
+
+.search .quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: 458px;
+  box-sizing: border-box;
+}
+
+.quantity button {
+  position: relative;
+  height: 37px;
+  width: 40px;
+  border: none;
+  background-color: var(--basic-pale-grey);
+  color: var(--basic-darkgray);
+}
+
+.quantity button[name="minus-adult"] {
+  margin-left: 40px;
+}
+
+.quantity button[name="plus-adult"] {
+  margin-right: 52px;
+}
+
+.quantity input {
+  width: 47px;
+  border: none;
+  background-color: var(--basic-pale-gray);
+  text-align: center;
+}
+
+.quantity button[name="minus-children"] {
+  margin-left: 26px;
+}
+/**************************************знaки получилось сделать, а изменение цвета нет(((
+
+.icon-minus::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 40%;
+  right: 50%;
+  width: 12px;
+  height: 3px;
+  background-color: var(--basic-darkgray);
+}
+
+.icon-plus::after,
+.icon-plus::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 20%;
+  width: 11px;
+  height: 2.54px;
+  background-color: var(--basic-darkgray);
+}
+
+.icon-plus::before {
+  transform: rotate(90deg);
+}
+*/
+.icon-minus {
+  position: absolute;
+  top: 8px;
+  left: 14px;
+  width: 12px;
+  height: 3px;
+}
+
+.icon-plus {
+  position: absolute;
+  top: 12px;
+  left: 7px;
+  width: 12px;
+  height: 3px;
+}
+
+.search > button {
+  width: 100%;
+  background-color: var(--basic-light-blue-two);
+  border: medium none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 21px;
+  color: var(--basic-white);
+  line-height: 16px;
+  padding: 21px 0px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.search > button:hover {
+  background-color: var(--basic-grayish-azure);
+}
+
+.search > button:active {
+  color:rgba(255, 255, 255, 0.3);
+  background-color: var(--basic-grayish-azure-two);
+}
+
+input[name="date-out"]:hover {
+  background-color: var(--basic-pale-grey-two);
+}
+
+input[name="date-out"]:focus {
+  background-color: var(--basic-white);
+  outline-offset: -2px;
+  outline: 2px solid var(--basic-mercury);
+}
+
+input[name="date-in"]:hover {
+  background-color: var(--basic-pale-grey-two);
+}
+
+input[name="date-in"]:focus {
+  background-color: var(--basic-white);
+  outline-offset: -2px;
+  outline: 2px solid var(--basic-mercury);
+}
+
+input[name="number of adults"]:hover {
+  background-color: var(--basic-pale-grey-two);
+}
+
+input[name="number of adults"]:focus {
+  background-color: var(--basic-white);
+  outline-offset: -2px;
+  outline: 2px solid var(--basic-mercury);
+}
+
+input[name="number-of-children"]:hover {
+  background-color: var(--basic-pale-grey-two);
+}
+
+input[name="number-of-children"]:focus {
+  background-color: var(--basic-white);
+  outline-offset: -2px;
+  outline: 2px solid var(--basic-mercury);
+}
+.calendar-check,
+.calendar-departure {
+  position: absolute;
+  color: var(--basic-darkgray);
+}
+
+.calendar-check svg {
+  position: absolute;
+  top: 0px;
+  left: 340px;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.calendar-departure svg {
+  position: absolute;
+  top: 0px;
+  left: 336px;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.icon-calendar:hover path {
+  fill: var(--basic-black)
+}
+
+.icon-calendar:active path {
+  fill: var(--basic-light-blue-two)
+}
+
+.icon-minus:hover rect {
+  fill: var(--basic-black);
+}
+
+.icon-minus:active rect {
+  fill: var(--basic-light-blue-two);
+}
+
+.icon-plus:hover path {
+  outline: none;
+  fill: var(--basic-black);
+}
+
+.icon-plus:active path {
+  outline: none;
+  fill: var(--basic-light-blue-two);
+}
+
+.block-map :focus {
+  outline: none;
+}
+
+
+
+/*
+
+.link-academy:active path {
+  fill: var(--basic-light-grey-two);
+}
 /*GRID CATALOG*/
 /*
 outline-offset: -2px;
