@@ -1192,7 +1192,7 @@
 
 .search input {
   border: medium none;
-  background-color: var(--basic-pale-grey);
+  background-color: var(--basic-pale-gray);
   height: 35px;
   width: 331px;
   text-transform: uppercase;
@@ -1222,7 +1222,7 @@
   height: 37px;
   width: 40px;
   border: none;
-  background-color: var(--basic-pale-grey);
+  background-color: var(--basic-pale-gray);
   color: var(--basic-darkgray);
 }
 
