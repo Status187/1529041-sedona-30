@@ -22,9 +22,9 @@
           <img src="img/index-img/logo-img.png" width="138" height="70" alt="Логотип «SEDONA»">
         </a>
         <ul class="site-navigation">
-          <li><a href="blank.html">Информация</a></li>
-          <li><a href="blank.html">Фото и видео</a></li>
-          <li><a href="blank.html">Карта штата</a></li>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
           <li class="active"><a href="blank.html">Гостиницы</a></li>
         </ul>
       </nav>
@@ -36,7 +36,7 @@
 
         <form class="form-select" action="https://echo.htmlacademy.ru/" method="get">
 
-          <div class="property-container">
+          <div class="container-infrastructure">
             <h2>Инфраструктура:</h2>
             <ul class="property-list">
               <li class="property-item filter-input-checkbox">
@@ -60,23 +60,23 @@
             </ul>
           </div>
 
-          <div class="property-container-two">
+          <div class="container-housing">
             <h2>Тип жилья:</h2>
             <ul class="property-list">
               <li class="property-item filter-input-checkbox">
-                <label class="check-two">
+                <label class="check-housing">
                   <input class="check-input" type="checkbox" name="hotel" checked>
                   <span class="check-box">Гостиница</span>
                 </label>
               </li>
               <li class="property-item filter-input-checkbox">
-                <label class="check-two">
+                <label class="check-housing">
                   <input class="check-input" type="checkbox" name="motel" checked>
                   <span class="check-box">Мотель</span>
                 </label>
               </li>
               <li class="property-item filter-input-checkbox">
-                <label class="check-two">
+                <label class="check-housing">
                   <input class="check-input" type="checkbox" name="apartments" checked>
                   <span class="check-box">Апартаменты</span>
                 </label>
@@ -90,11 +90,11 @@
                 <div class="cost-control">
                   <label class="label-from">
                     <span>От</span>
-                    <input type="text" name="min-price" value="0" id="value-from">
+                    <input type="text" name="min-price" placeholder="0" id="value-from" autocomplete="off">
                   </label>
                   <label class="label-before">
                     <span>До</span>
-                    <input type="text" name="max-price" value="3000" id="value-before">
+                    <input type="text" name="max-price" placeholder="3000" id="value-before" autocomplete="off">
                   </label>
                 </div>
                   <div class="range-filter">
@@ -105,7 +105,7 @@
                       <div class="toggle toggle-min" tabindex="0"></div>
                       <div class="toggle toggle-max" tabindex="0"></div>
                     </div>
-                    <button type="submit" name="demonstrate">Показать</button>
+                    <button type="submit">Показать</button>
                   </div>
               </fieldset>
           </div>
@@ -239,7 +239,7 @@
       <section class="footer-contacts">
         <h4 class="visually-hidden">Контакты</h4>
         <a class="visit" href="#">#visitsedona</a>
-        <a class="contacts-phone" href="tel:+74956660166">ТЕЛ: +7(495)666-01-66</a>
+        <a class="contacts-phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
       </section>
 
       <section class="footer-social">
