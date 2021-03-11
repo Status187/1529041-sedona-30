@@ -18,7 +18,7 @@
 
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
+        <a class="main-header-logo" href="index.html" aria-label="Вернуться на главную страницу">
           <img src="img/index-img/logo-img.png" width="138" height="70" alt="Логотип «SEDONA»">
         </a>
         <ul class="site-navigation">
@@ -42,19 +42,19 @@
               <li class="property-item filter-input-checkbox">
                 <label class="check">
                   <input class="check-input" type="checkbox" name="swimming-pool" checked>
-                  <span class="check-box">Бассейн</span>
+                  <span class="check-box" tabindex="0">Бассейн</span>
                 </label>
               </li>
               <li class="property-item filter-input-checkbox">
                 <label class="check" for="filter-parking">
                   <input class="check-input" type="checkbox" name="parking" id="filter-parking">
-                  <span class="check-box">Парковка</span>
+                  <span class="check-box" tabindex="0">Парковка</span>
                 </label>
               </li>
               <li class="property-item filter-input-checkbox">
                 <label class="check" for="filter-wi-fi">
                   <input class="check-input" type="checkbox" name="wi-fi" id="filter-wi-fi">
-                  <span class="check-box">Wi&#8209;fi</span>
+                  <span class="check-box" tabindex="0">Wi&#8209;fi</span>
                 </label>
               </li>
             </ul>
@@ -66,19 +66,19 @@
               <li class="property-item filter-input-checkbox">
                 <label class="check-housing">
                   <input class="check-input" type="checkbox" name="hotel" checked>
-                  <span class="check-box">Гостиница</span>
+                  <span class="check-box" tabindex="0">Гостиница</span>
                 </label>
               </li>
               <li class="property-item filter-input-checkbox">
                 <label class="check-housing">
                   <input class="check-input" type="checkbox" name="motel" checked>
-                  <span class="check-box">Мотель</span>
+                  <span class="check-box" tabindex="0">Мотель</span>
                 </label>
               </li>
               <li class="property-item filter-input-checkbox">
                 <label class="check-housing">
                   <input class="check-input" type="checkbox" name="apartments" checked>
-                  <span class="check-box">Апартаменты</span>
+                  <span class="check-box" tabindex="0">Апартаменты</span>
                 </label>
               </li>
             </ul>
@@ -133,16 +133,15 @@
             </ul>
           </div>
         <div class="arrows">
-          <a class="arrows-up">
+          <a class="arrows-up" tabindex="0" aria-label="По возрастанию">
             <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
             </svg>
           </a>
-          <a class="arrows-down">
+          <a class="arrows-down" aria-label="По убыванию">
             <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.5 10L0 0H11" fill="#81B3D2"/>
             </svg>
-
           </a>
         </div>
       </section>
@@ -244,7 +243,7 @@
 
       <section class="footer-social">
         <h4 class="visually-hidden">Мы в соцсетях</h4>
-        <a class="social color-footer" href="https://twitter.com/">
+        <a class="social color-footer" href="https://twitter.com/" aria-label="Твиттер">
           <svg display="none">
             <symbol id="twitter" viewBox="0 0 17 16">
                <path d="M10.95 1.14409C12.635.648089 13.934 1.41409 14.527
@@ -259,12 +258,12 @@
             <use xlink:href="#twitter"></use>
           </svg>
         </a>
-        <a class="social color-footer" href="https://ru-ru.facebook.com/">
+        <a class="social color-footer" href="https://ru-ru.facebook.com/" aria-label="Фейсбук">
           <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 4V0H8C5.79086.0 4 1.79086 4
             4V8H0v4H4V22H8V12h4V8H8V4h4z" fill="#fff"/></svg>
         </a>
-        <a class="social color-footer" href="https://www.youtube.com/">
+        <a class="social color-footer" href="https://youtube.com/" aria-label="Ютуб">
           <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65.0 20
              1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65.0 13V3C0 1.35 1.35.0 3 0zM6.027 4.002V11.998L15.014 8 6.027 4.002z" fill="#fff"/></svg>
@@ -273,7 +272,7 @@
 
       <section class="footer-developer">
         <h4 class="visually-hidden">Htmlacademy</h4>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Перейти в академию">
           <span>Website by</span>
           <div class="link-academy">
             <svg width="115" height="41" viewBox="0 0 115 41" fill="none" xmlns="http://www.w3.org/2000/svg">
