@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" href="apple.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 
 <body class="page-body">
@@ -63,7 +63,7 @@
         <ul class="features-list list-box">
           <li class="feature-item">
             <div class="icon-svg">
-              <img src="img/index-img/icon-house.png" width="75" height="72" alt="дом иконка">
+              <img src="img/index-img/house.png" width="75" height="72" alt="дом иконка">
             </div>
             <h3>Жильё</h3>
             <p>Рекомендуем пожить в настоящем</p>
@@ -143,7 +143,7 @@
               </span>
             </a>
           </label>
-          <input type="text" name="date-in" value="24 апреля 2017" id="date-check-in">
+          <input type="text" class="date-in" name="date-in" value="24 апреля 2017" id="date-check-in">
           <label class="departure" for="date-departure">
             <span>Дата выезда:</span>
             <a class="calendar-departure" href="#" aria-label="Открыть календарь для выбора даты выезда">
@@ -152,41 +152,41 @@
               </span>
             </a>
           </label>
-          <input type="text" name="date-out" value="4 июля 2017" id="date-departure">
+          <input type="text" class="date-out" name="date-out" value="4 июля 2017" id="date-departure">
           <div class="quantity">
             <!--Взрослые-->
             <label for="quantity-adults">
               <span>Взрослые:</span>
             </label>
-            <button type="button" name="minus-adult">
-              <div class="icon-minus">
+            <button type="button" class="minus-adult" name="minus-adult">
+              <span class="icon-minus">
                 <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="12" height="3" fill="#A9A9A9"/></svg>
-              </div>
+              </span>
             </button>
-            <input type="text" name="number of adults" value="2" id="quantity-adults">
-            <button type="button" name="plus-adult">
-              <div class="icon-plus">
+            <input type="text" class="number-of-adults" name="number-of-adults" value="2" id="quantity-adults">
+            <button type="button" class="plus-adult" name="plus-adult">
+              <span class="icon-plus">
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
                 </svg>
-              </div>
+              </span>
             </button>
             <!--Дети-->
             <label for="quantity-children">
               <span>Дети:</span>
             </label>
-            <button type="button" name="minus-children">
-              <div class="icon-minus">
+            <button type="button" class="minus-children" name="minus-children">
+              <span class="icon-minus">
                 <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="12" height="3" fill="#A9A9A9"/></svg>
-              </div>
+              </span>
             </button>
-            <input type="text" name="number-of-children" value="0" id="quantity-children">
-            <button type="button" name="plus-children">
-              <div class="icon-plus">
+            <input type="text" class="number-of-children" name="number-of-children" value="0" id="quantity-children">
+            <button type="button" class="plus-children" name="plus-children">
+              <span class="icon-plus">
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
                 </svg>
-              </div>
+              </span>
             </button>
           </div>
           <button type="submit" tabindex="0">
